@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ShopZone - Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="main-header">
+
+        <div class="header-container">
+
+            <div class="logo">
+                🛍️ ShopZone
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Products</a>
+                <a href="index.html#deals">Deals</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="login-btn">
+                    Login
+                </button>
+
+                <button class="cart-btn">
+                    🛒 Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CART PAGE ================= -->
+
+    <main class="cart-main">
+
+        <div class="cart-page-header">
+
+            <h1>🛒 My Shopping Cart</h1>
+
+            <p>
+                Review your selected products before checkout.
+            </p>
+
+        </div>
+
+
+        <div id="cart-page-content">
+
+            <!-- JavaScript will load cart items here -->
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 ShopZone. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- IMPORTANT:
+         Load your existing JavaScript first -->
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            initializeProducts();
+            initializeCart();
+            initializeLogin();
+            updateCartButton();
+
+            renderCartPage();
+
+        });
+    </script>
+
+</body>
+
+</html>
