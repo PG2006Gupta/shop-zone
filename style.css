@@ -2318,18 +2318,14 @@ footer p {
 }
 @media (max-width: 768px) {
 
-   
-    .floating-offer {
-        transform: scale(0.75);
-    }
-    .floating-offer.offer-left {
-        left: 10px;
-        top: 10px;
-    }
-
-    .floating-offer.offer-right {
-        right: 10px;
-        top: 70px;
+    /* Hide decorative floating offers on mobile */
+    .floating-offer,
+    .offer-1,
+    .offer-2,
+    .offer-3,
+    .offer-4,
+    .offer-5 {
+        display: none;
     }
 
 }
