@@ -1753,38 +1753,48 @@ footer p {
 
     header {
         position: relative;
-
-        padding: 20px 10px;
+        padding: 15px 10px;
     }
 
     .logo h1 {
         font-size: 30px;
     }
 
+    /* Mobile Navigation */
     nav {
-        flex-direction: column;
-
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        gap: 6px 10px;
     }
 
     nav a {
-        width: 80%;
+        width: auto;
+        font-size: 13px;
+        padding: 6px 9px;
     }
 
+    /* Mobile Header Buttons */
     .header-buttons {
-        flex-direction: column;
-
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        gap: 10px;
+        margin-top: 8px;
     }
 
     .header-buttons button {
-        width: 70%;
+        width: auto;
+        padding: 7px 15px;
     }
-
 
     .hero {
         width: 94%;
-
         padding: 50px 15px;
     }
 
@@ -1796,10 +1806,8 @@ footer p {
         font-size: 15px;
     }
 
-
     .search-section form {
         flex-direction: column;
-
         width: 90%;
     }
 
@@ -1807,7 +1815,6 @@ footer p {
     .search-section button {
         width: 100%;
     }
-
 
     .category-container {
         flex-direction: column;
@@ -1817,35 +1824,28 @@ footer p {
         width: 90%;
     }
 
-
     .sorting-section {
         flex-direction: column;
     }
 
-
     .product-container {
         grid-template-columns: 1fr;
-
         width: 95%;
     }
-
 
     .product-card {
         min-height: 540px;
     }
 
-
     .product-image {
         height: 230px;
     }
-
 
     #deals,
     #cart,
     #contact {
         width: 94%;
     }
-
 }
 /* =========================================================
    JAVASCRIPT INTERACTIVE COMPONENTS
@@ -2347,6 +2347,36 @@ footer p {
     .offer-5 {
         left: 40%;
         top: 5px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 15px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Login and Cart */
+    .header-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header-buttons button {
+        font-size: 14px;
     }
 
 }
