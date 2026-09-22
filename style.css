@@ -2317,15 +2317,36 @@ footer p {
 
 }
 @media (max-width: 768px) {
-
-    /* Hide decorative floating offers on mobile */
-    .floating-offer,
-    .offer-1,
-    .offer-2,
-    .offer-3,
-    .offer-4,
+    .floating-offer {
+        transform: scale(0.65);
+    }
+    .floating-offer.offer-left {
+        left: 0;
+        top: 5px;
+    }
+    .floating-offer.offer-right {
+        right: 0;
+        top: 75px;
+    }
+    .offer-1 {
+        left: 2%;
+        top: 5px;
+    }
+    .offer-2 {
+        left: 5%;
+        bottom: 10px;
+    }
+    .offer-3 {
+        right: 5%;
+        top: 70px;
+    }
+    .offer-4 {
+        right: 2%;
+        bottom: 10px;
+    }
     .offer-5 {
-        display: none;
+        left: 40%;
+        top: 5px;
     }
 
 }
