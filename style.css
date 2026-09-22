@@ -273,7 +273,7 @@ nav a:hover {
 /* Move Mega Sale away from the hero heading */
 .floating-offer.offer-left {
     left: 1%;
-    top: 180px;
+    top: 80px;
     transform: none;
 }
 
