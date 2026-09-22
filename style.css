@@ -2316,3 +2316,20 @@ footer p {
         translateX(5px);
 
 }
+@media (max-width: 768px) {
+
+   
+    .floating-offer {
+        transform: scale(0.75);
+    }
+    .floating-offer.offer-left {
+        left: 10px;
+        top: 10px;
+    }
+
+    .floating-offer.offer-right {
+        right: 10px;
+        top: 70px;
+    }
+
+}
