@@ -270,6 +270,12 @@ nav a:hover {
     animation: floatingOffer 7s ease-in-out infinite;
 
 }
+/* Move Mega Sale away from the hero heading */
+.floating-offer.offer-left {
+    left: 1%;
+    top: 180px;
+    transform: none;
+}
 
 
 /* =========================================================
