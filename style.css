@@ -2380,3 +2380,8 @@ footer p {
     }
 
 }
+
+#categories {
+    position: relative;
+    top: -80px;
+}
